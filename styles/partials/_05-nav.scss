@@ -1,0 +1,44 @@
+.nav-container {
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $mid-tone;
+    align-items: center;
+}
+
+.nav-container div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav-item {
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: $darker;
+    text-transform: uppercase;
+    padding: 23px 30px;
+    text-align: center;
+    transition: all .05s ease;
+}
+
+.nav-item:hover {
+    background: $darker;
+    color: white;
+}
+
+.nav-icon {
+    align-items: center;
+    padding: 10px 15px;
+    transition: color .5s ease;
+}
+
