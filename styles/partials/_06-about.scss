@@ -16,7 +16,8 @@
     grid-column: 2 / 7;
     display: flex;
     align-items: center;
-    // border: 1px solid red;
+    z-index: 10;
+    transition: all 5s ease;
 }
 
 .about-item-1 h2 {
@@ -24,7 +25,6 @@
     word-spacing: 1px;
     color: #666679;
     padding-left: 6%;
-    // border: 1px solid red;
 }
 
 .about-item-description {
@@ -88,8 +88,8 @@
         grid-column: 2 / 10;
         display: flex;
         align-items: center;
-        z-index: 10;
         background: rgba(255, 255, 255, .7);
+        border-radius: 0 3px 0 0;
     }
     .about-item-2 {
         grid-row: 1 / 7;
@@ -101,5 +101,26 @@
     }
 }
 
-// @media (max-width: )
+@media (max-width: 450px) {
+    .about {
+        height: 70%;
+        margin-bottom: 15%;
+    }
+    .about-item-1 {
+        grid-row: 5 / 9;
+        grid-column: 1/ 12;
+        margin: 0 auto;
+        padding: 8%;
+        border-radius: 0 0px 25px 0;
+    }
+}
+
+@media (max-width: 450px) and (max-height: 700px) {
+    .about-item-1 {
+        grid-row: 1 / 11;
+        grid-column: 2/ 12;
+        margin: 0 auto;
+        padding: 8%;
+    }
+}
 

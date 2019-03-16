@@ -1,15 +1,31 @@
 .nav-container {
-    width: 98%;
+    width: calc(100% - 32px);
     height: 60px;
     margin: 0 auto;
+    background: white;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    border-top: 1px solid $mid-tone;
+    // border-top: 1px solid $mid-tone;
     align-items: center;
+}
+
+.nav-container::after {
+    content: '';
+    height: 1px;
+    // width: calc(100% - 30px);
+    background: $mid-tone;
+    margin: 0 auto;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 20px;
+    // border: 1px solid red;
 }
 
 .nav-container div {
@@ -26,7 +42,7 @@
     letter-spacing: 2px;
     color: $darker;
     text-transform: uppercase;
-    padding: 23px 30px;
+    padding: 23px 40px;
     text-align: center;
     transition: all .05s ease;
 }
