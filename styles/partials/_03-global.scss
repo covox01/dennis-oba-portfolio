@@ -41,6 +41,11 @@ img {
     justify-content: center;
 }
 
+.flx-col {
+    display: flex;
+    flex-flow: column;
+}
+
 .algn-center {
     display: flex;
     align-items: center;

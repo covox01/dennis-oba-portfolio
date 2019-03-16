@@ -10,14 +10,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    // border-top: 1px solid $mid-tone;
     align-items: center;
 }
 
 .nav-container::after {
     content: '';
     height: 1px;
-    // width: calc(100% - 30px);
     background: $mid-tone;
     margin: 0 auto;
     position: absolute;
@@ -25,7 +23,6 @@
     left: 0;
     right: 0;
     z-index: 20px;
-    // border: 1px solid red;
 }
 
 .nav-container div {
@@ -33,7 +30,6 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
-
 }
 
 .nav-item {
@@ -44,7 +40,7 @@
     text-transform: uppercase;
     padding: 23px 40px;
     text-align: center;
-    transition: all .05s ease;
+    transition: all .2s ease;
 }
 
 .nav-item:hover {
@@ -54,7 +50,84 @@
 
 .nav-icon {
     align-items: center;
-    padding: 10px 15px;
+    padding: 23px 23px;
     transition: color .5s ease;
 }
 
+.nav-icon:hover {
+    color: rgb(74, 156, 233);
+}
+
+.nav-port {
+    position: relative;
+    padding: 23px 40px;
+    width: 160px;
+    
+}
+
+.port-title {
+    width: 23px 40px;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 110;
+    transition: all .2s ease;
+}
+
+
+.port-nav {
+    position: absolute;
+    background: white;
+    color: $darker;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    z-index: 90;
+    transition: all .2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.port-nav-item {
+    border-top: 1px solid $mid-tone;
+    width: 100%;
+    background: white;
+    color: $darker;
+    z-index: 90;
+    padding: 8px 22.4px;
+    transition: all .2s ease;
+}
+
+.nav-port:hover .one {
+    border-left: 1px solid $mid-tone;
+}
+
+.nav-port:hover .three {
+    border-right: 1px solid $mid-tone;
+}
+
+.port-nav-item:hover {
+    background: $darker;
+    color: white;
+}
+
+
+.port-nav-up {
+    transform: translateY(-100%);
+}
+
+.port-nav-item-up {
+    transform: translateY(-145%);
+}
+
+.hover {
+    color: white;
+    background: $darker;
+}

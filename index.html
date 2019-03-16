@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +11,106 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="super-container">
         <div class="container flex" id="home">
             <header class="flex">
                 <h1>dennis oba</h1>
             </header>
-        
+
         </div>
-        <main class="container flex">
-            <section class="about" id="about">
-                <div class="about-item-1">
-                    <div class=about-item-description>
-                        <div class="about-title">
-                            <span>👹</span>
-                            <h2 class="about-me">about me</h2>
+        <main class="super-container">
+            <div class="container flex">
+                <section class="about" id="about">
+                    <div class="about-item-1">
+                        <div class=about-item-description>
+                            <div class="about-title">
+                                <span>👹</span>
+                                <h2 class="about-me">about me</h2>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ab officia, ducimus
+                                suscipit in esse
+                                magnam,
+                                voluptate maiores asperiores totam a repellat. Laboriosam tempora officiis corrupti
+                                consequuntur
+                                quaerat libero
+                                excepturi.
+                            </p>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ab officia, ducimus suscipit in esse
-                            magnam,
-                            voluptate maiores asperiores totam a repellat. Laboriosam tempora officiis corrupti consequuntur
-                            quaerat libero
-                            excepturi.
-                        </p>
                     </div>
-                </div>
-                <div class="about-item-2">
-                    <img src="../assets/about-me-photo.jpg" alt="">
-                </div>
+                    <div class="about-item-2">
+                        <img src="../assets/about-me-photo.jpg" alt="">
+                    </div>
+                </section>
+            </div>
+            <div class="container flex">
+                <section class="port-a" id="port-1">
+                    <div class="item-a">
+                        <!-- <div class="demo">
+                            <img class="radio" src="../assets/radio-gif.gif" alt="Demo of a Radio Puzzle">
+                        </div> -->
+                        <video class="demo" src="../assets/radio.mov" type="video/mp4"></video>
+                    </div>
+                    <article class="port-desc-a">
+                        <h2>broken radio puzzle</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium.
+                            Minus, non sapiente consectetur ad animi nihil, quo quia perferendis provident odit
+                            veritatis, soluta incidunt.</p>
+                        <ul class="tech">
+                            <li>jquery</li>
+                            <li>html5</li>
+                            <li>css grid</li>
+                            <li>sass</li>
+                            <li>javascript</li>
+                        </ul>
+                        <div class="port-btn">
+                            <div class="live"></div>
+                            <div class="github"></div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+
+            <!-- <section class="port-b" id="port-1">
+                <div class="item-b"></div>
+                <article class="port-desc">
+                    <h2>weather gallery</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium. Minus, non
+                        sapiente consectetur ad animi nihil, quo quia perferendis provident odit veritatis, soluta incidunt.</p>
+                    <ul class="tech">
+                        <li>jquery</li>
+                        <li>rest api</li>
+                        <li>css grid</li>
+                        <li>sass</li>
+                        <li>javascript</li>
+                    </ul>
+                    <div class="port-btn">
+                        <div class="live"></div>
+                        <div class="github"></div>
+                    </div>
+                </article>
             </section>
+            <section class="port-a" id="port-1">
+                <div class="item-a"></div>
+                <article class="port-desc">
+                    <h2>the box office </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium. Minus, non
+                        sapiente consectetur ad animi nihil, quo quia perferendis provident odit veritatis, soluta incidunt.</p>
+                    <ul class="tech">
+                        <li>react</li>
+                        <li>rest api</li>
+                        <li>firebase</li>
+                        <li>router</li>
+                        <li>javascript</li>
+                    </ul>
+                    <div class="port-btn">
+                        <div class="live"></div>
+                        <div class="github"></div>
+                    </div>
+                </article>
+            </section> -->
         </main>
     </div>
     <div class="top-border"></div>
@@ -47,11 +120,24 @@
         <div>
             <a href="#home" class="nav-item">home</a>
             <a href="#about" class="nav-item">about</a>
-            <a href="#portfolio" class="nav-item">portfolio</a>
+            <div href="#portfolio" class="nav-item nav-port">
+                <div class="port-title">portfolio</div>
+                <a href="#" class="port-nav">
+                    <a href="#portfolio-1" class="port-nav-item one">1</a>
+                    <a href="#portfolio-2" class="port-nav-item">2</a>
+                    <a href="#port-folio-3" class="port-nav-item three">3</a>
+                </a>
+            </div>
             <a href="#skills" class="nav-item">skills</a>
             <a href="#contact" class="nav-item">contact</a>
         </div>
-        <a href="https://twitter.com/dennisoba" target="_blank" class="icon nav-icon" aria-label="This goes to Dennis Oba twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/dennisoba" target="_blank" class="icon nav-icon" aria-label="This goes to Dennis Oba twitter"><i
+                class="fab fa-twitter"></i></a>
     </nav>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src="main.js"> </script>
 </body>
+
 </html>
