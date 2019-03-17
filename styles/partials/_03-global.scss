@@ -4,11 +4,11 @@
     font-size: 100%;
 }
 
-h1, h2, h3, a, div, ul, li {
+h1, h2, h3, a, div, ul, li, span {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, li, span {
     text-transform: uppercase;
     color: $darker;
 }
