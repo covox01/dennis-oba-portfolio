@@ -1,0 +1,131 @@
+// .port-a {
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+// }
+
+// .port-b {
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+//     flex-direction: row-reverse;
+// }
+
+// .item-a {
+//     display: flex;
+//     align-items: center;
+//     margin: 0 auto;
+//     width: 100%;
+//     height: 100%;
+//     background: $lightest;
+// }
+
+// .demo {
+//     display: flex;
+//     align-items: center;
+//     width: 65%;
+//     background: white;
+//     margin: 0 auto;
+//     cursor: pointer;  
+//     border-radius: 3px;
+//     margin-bottom: 5%;
+// }
+
+// .radio {
+//     display: flex;
+//     align-items: center;
+//     margin: 0 auto;
+//     height: 100%;
+//     width: 100%;
+//     border: 7px solid white;
+//     padding-top: 7px;
+//     padding-bottom: 7px;
+//     border-radius: 5px;
+// }
+
+// .port-desc-a {
+//     width: 100%;
+//     margin-bottom: 3%;
+// }
+
+// .desc {
+//     margin: 0 auto;
+//     width: 48%;
+// }
+
+// .desc h2 {
+//     font-size: .8rem;
+//     margin-bottom: 3%;
+//     letter-spacing: 1px;
+//     word-spacing: 2px;
+// }
+
+// .desc p {
+//     font-size: .75rem;
+//     font-weight: 300;
+//     line-height: 2;
+//     letter-spacing: .5px;
+//     text-align: justify;
+//     margin-bottom: 6%;
+// }
+
+// .tech, .desc span {
+//     display: flex;
+//     font-weight: 300;
+//     font-size: .7rem;
+//     width: 100%;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .tech li {
+//     padding-right: 0 5px;
+//     margin-bottom: 4%;
+// }
+
+// .tech li:last-child {
+//     padding-right: 0;
+// }
+
+// .desc span {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 8%;
+// }
+
+// .decor {
+//     height: 13px;
+//     width: 1px;
+//     background: rgb(199, 199, 199);
+// }
+
+// .port-btn {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .live-btn, .github-btn {
+//     width: 75px;
+//     cursor: pointer;
+//     margin: 0 5px;
+// }
+
+// #live path{
+//     fill: rgb(119, 118, 118);
+// }
+
+// .live-btn:hover #record{
+//     fill: red;
+// }
+
+// #border path {
+//     fill: rgb(155, 155, 155);
+// }
+
+// #record {
+//     transition: fill .5s ease;
+// }
+
+// #github path{
+//     fill: rgb(119, 118, 118);
+// }

@@ -10,15 +10,10 @@ const navHover = () => {
         $('.port-nav').removeClass('port-nav-up');
         $('.port-nav-item').removeClass('port-nav-item-up');
     })
-
 }
-
-const videoHover = () => {
-    $('.demo').mouseover(function () {
-        $(this).get(0).play();
-    }).mouseout(function () {
-        $(this).get(0).pause();
-    })
+// This opens a new tab using jquery
+const goToUrl = () => {
+    window.open('https://www.google.com')
 }
 
 const init = () => {
