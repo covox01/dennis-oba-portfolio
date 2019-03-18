@@ -120,6 +120,8 @@
 }
 
 .desc span {
+    font-size: .6rem;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     margin-bottom: 8%;
@@ -231,7 +233,6 @@
         margin-right: 25%;
     }
     .desc {
-        border: 1px solid red;
         width: 80%;
         p {
             width: 100%;
@@ -261,6 +262,8 @@
         width: 100%;
     }
 }
+
+
 
 @media (max-width: 460px) {
     .port-a, .port-b {

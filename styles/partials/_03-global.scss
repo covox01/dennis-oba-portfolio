@@ -4,13 +4,18 @@
     font-size: 100%;
 }
 
-h1, h2, h3, a, div, ul, li, span {
+h1, h2, h3, a, div, ul, li, span, label, input, button {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, li, span {
+h1, h2, h3, li, span, label, input, button {
     text-transform: uppercase;
     color: $darker;
+}
+
+li {
+    letter-spacing: 1px;
+    font-size: .6rem;
 }
 
 p {

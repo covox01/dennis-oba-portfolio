@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -18,24 +19,17 @@
             <header class="flex">
                 <h1>dennis oba</h1>
             </header>
-
         </div>
         <main class="super-container" id="about">
             <div class="container flex">
-                <section class="about">
+                <section class="about" data-aos="fade-up" data-aos-duration="1000">
                     <div class="about-item-1">
-                        <div class=about-item-description>
+                        <div class="about-item-description" data-aos="fade-in" data-aos-duration="4000">
                             <div class="about-title">
                                 <span>👹</span>
                                 <h2 class="about-me">about me</h2>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ab officia, ducimus
-                                suscipit in esse
-                                magnam,
-                                voluptate maiores asperiores totam a repellat. Laboriosam tempora officiis corrupti
-                                consequuntur
-                                quaerat libero
-                                excepturi.
+                            <p>My name is Dennis and I'm a front-end web developer based in Toronto. I love esthetically pleasing design and tend to approach code with heavy consideration for user experience. On off days, you can find me handcrafting leather goods!
                             </p>
                         </div>
                     </div>
@@ -46,17 +40,15 @@
             </div>
             <div class="container flex">
                 <section class="port-a" id="port-1">
-                    <div class="item-a">
-                        <div class="demo">
-                            <video class="demo-item" src="../assets/radio-1.mov" type="video/mp4" loop preload="auto" autoplay></video>
+                    <div class="item-a" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="demo" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <video class="demo-item" src="../assets/radio-1.mov" type="video/mp4"></video>
                         </div>
                     </div>
-                    <article class="port-desc-a">
+                    <article class="port-desc-a" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="desc">
                             <h2>broken radio puzzle</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium.
-                                Minus, non sapiente consectetur ad animi nihil, quo quia perferendis provident odit
-                                veritatis, soluta incidunt.</p>
+                            <p>An app inspired by traditional puzzle boxes, this radio follows the same concepts by allowing users to discover visual and audio cues to solve the puzzle. Try and see if you can get it to play a song :)</p>
                             <ul class="tech">
                                 <li>jquery</li>
                                 <li class="decor"></li>
@@ -68,7 +60,7 @@
                             </ul>
                             <span>javascript</span>
                             <div class="port-btn">
-                                <div id="radio-live" class="live" onClick="goToUrl();" target="_blank">
+                                <div id="radio-live" class="live" onClick="radio();" target="_blank">
                                     <svg class="live-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         viewBox="0 0 778.1 234.4" enable-background="new 0 0 778.1 234.4" xml:space="preserve">
                                         <g>
@@ -134,17 +126,15 @@
             </div>
             <div class="container flex">
                 <section class="port-b" id="port-2">
-                    <div class="item-a">
-                        <div class="demo demo-b">
-                            <video class="demo-item" src="../assets/weather-gallery-3.mov" type="video/mp4" loop preload="auto" autoplay></video>
+                    <div class="item-a" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="demo demo-b" data-aos="fade-up" data-aos-duration="1000">
+                            <video class="demo-item" src="../assets/weather-gallery-3.mov" type="video/mp4"></video>
                         </div>
                     </div>
-                    <article class="port-desc-a">
+                    <article class="port-desc-a" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc desc-b">
                             <h2>weather gallery</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium.
-                                Minus, non sapiente consectetur ad animi nihil, quo quia perferendis provident odit
-                                veritatis, soluta incidunt.</p>
+                            <p>An app that pairs paintings with the weather condition of the city the user has inputed. A collaboration with fellow Alex Shin, Powered by Openweather and Rijksmuseum API. </p>
                             <ul class="tech">
                                 <li>jquery</li>
                                 <li class="decor"></li>
@@ -156,7 +146,7 @@
                             </ul>
                             <span>javascript</span>
                             <div class="port-btn">
-                                <div id="radio-live" class="live" onClick="goToUrl();" target="_blank">
+                                <div id="radio-live" class="live" onClick="weather();" target="_blank">
                                     <svg class="live-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         x="0px" y="0px" viewBox="0 0 778.1 234.4" enable-background="new 0 0 778.1 234.4" xml:space="preserve">
                                         <g>
@@ -223,12 +213,12 @@
             </div>
             <div class="container flex">
                 <section class="port-a" id="port-3">
-                    <div class="item-a">
-                        <div class="demo">
-                            <video class="demo-item" src="../assets/radio-1.mov" type="video/mp4" loop preload="auto" autoplay></video>
+                    <div class="item-a" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="demo" data-aos="fade-up" data-aos-duration="1000">
+                            <video class="demo-item" src="../assets/box-office-boffo.mov" type="video/mp4"></video>
                         </div>
                     </div>
-                    <article class="port-desc-a">
+                    <article class="port-desc-a" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
                             <h2>box office boffo</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque quae praesentium.
@@ -245,7 +235,7 @@
                             </ul>
                             <span>react router</span>
                             <div class="port-btn">
-                                <div id="radio-live" class="live" onClick="goToUrl();" target="_blank">
+                                <div id="boffo-live" class="live" onClick="boffo();" target="_blank">
                                     <svg class="live-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         x="0px" y="0px" viewBox="0 0 778.1 234.4" enable-background="new 0 0 778.1 234.4" xml:space="preserve">
                                         <g>
@@ -266,7 +256,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div id="radio-github" class="github">
+                                <div id="boffo-github" class="github">
                                     <svg class="github-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 778.1 234.4"
                                         enable-background="new 0 0 778.1 234.4" xml:space="preserve">
@@ -310,6 +300,76 @@
                     </article>
                 </section>
             </div>
+            <div class="container flex" id="skills" data-aos="fade-up" data-aos-duration="2000">
+                <section class="skills">
+                    <div class="skills-row">
+                        <div class="skills-item">
+                            <img src="../assets/html.svg" alt="Html5 Logo">
+                            <h3>html 5</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/css.svg" alt="Css Logo">
+                            <h3>css</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/sass.svg" alt="Sass Logo">
+                            <h3>sass</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/javascript.svg" alt="Javascript Logo">
+                            <h3>javascript</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/jquery.svg" alt="Jquery Logo">
+                            <h3>jquery</h3>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="skills-row">
+                        <div class="skills-item">
+                            <img src="../assets/api.svg" alt="Api Logo">
+                            <h3>rest api</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/react.svg" alt="React Logo">
+                            <h3>react</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/firebase.svg" alt="Firebase Logo">
+                            <h3>firebase</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/github.svg" alt="Github Logo">
+                            <h3>github</h3>
+                        </div>
+                        <div class="skills-item">
+                            <img src="../assets/illustrator.svg" alt="Illustrator Logo">
+                            <h3>illustrator</h3>
+                        </div>
+                    </div> 
+                </section>
+            </div>
+            <div class="container flex">
+                <section class="contact" data-aos="fade-up" data-aos-duration="2000">
+                    <h2>say hello!</h2>
+                    <form action="" class="contact-form">
+                        <div class="float">
+                            <input type="text" name="name" placeholder="name" required>
+                            <label for="name">name</label>
+                        </div>
+                        <div class="float">
+                            <input type="text" name="email" placeholder="email" required>
+                            <label for="email">email</label>
+                        </div>
+                        <div class="area">
+                            <textarea name="message" id="" cols="30" rows="20" required style="resize:none" placeholder="message"></textarea>
+                            <label for="message" class="area-float">message</label>
+                        </div>
+                        <button type="submit">submit</button>
+                    </form>
+                </section>
+            </div>
+
         </main>
     </div>
     <div class="top-border"></div>
@@ -336,7 +396,15 @@
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
         crossorigin='anonymous'></script>
+   
     <script src="main.js"> </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // once: true;
+        });
+    </script>
+
 </body>
 
 </html>

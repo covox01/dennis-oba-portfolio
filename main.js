@@ -1,4 +1,11 @@
 
+// const handleClick = () => {
+//     $('.about').on('click', function(){
+        
+//     })
+// }
+
+
 const navHover = () => {
     $('.nav-port').hover(function() {
         console.log('yes');
@@ -12,16 +19,38 @@ const navHover = () => {
     })
 }
 // This opens a new tab using jquery
-const goToUrl = () => {
-    window.open('https://www.google.com')
+const radio = () => {
+    window.open('https://covox01.github.io/broken-radio-puzzle/');
+}
+
+const weather = () => {
+    window.open('https://alexandershindennisoba.github.io/weather-gallery/');
+}
+
+const boffo = () => {
+    window.open('https://auth-test-d2fa2.firebaseapp.com/');
+}
+
+
+const goToPortfolio = () => {
+    $('.nav-port').on('click', function(){
+        console.log('yo')
+        window.location.hash = $(this).attr("#port-1");
+    })
 }
 
 const init = () => {
     navHover();
-    videoHover();
+    goToPortfolio();
 }
-
+// AOS.init();
+// AOS.init({
+//     // Global settings:
+//     offset: 120, // offset (in px) from the original trigger point
+//     delay: 0, // values from 0 to 3000, with step 50ms
+//     duration: 400, // values from 0 to 3000, with step 50ms
+// });
 
 $(function(){
     init();
-});
+}); 
