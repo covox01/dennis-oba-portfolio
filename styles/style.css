@@ -896,7 +896,6 @@ h1 {
   width: 65%;
   background: white;
   margin: 0 auto;
-  cursor: pointer;
   border-radius: 20px;
   margin-bottom: 5%;
 }
@@ -1709,32 +1708,4 @@ button.submit:hover {
     margin-bottom: 25%;
   }
 }
-/*# sourceMappingURL=style.css.map */case;
-  padding: 5px 10px;
-  letter-spacing: 1px; }
-
-.media {
-  margin: 10px auto 0; }
-  .media a {
-    padding: 0 7px;
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-    transition: color .5s ease; }
-
-.conicon {
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease; }
-
-.conicon:hover {
-  color: black; }
-
-@media (max-width: 450px) {
-  .contact {
-    width: 90%;
-    margin-bottom: 20%; } }
-
-@media (max-width: 400px) {
-  .contact {
-    width: 90%;
-    margin-bottom: 25%; } }
+/*# sourceMappingURL=style.css.map */
