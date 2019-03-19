@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <div class="super-container">
         <div class="container flex" id="home">
@@ -349,24 +350,33 @@
                     </div> 
                 </section>
             </div>
-            <div class="container flex">
-                <section class="contact" data-aos="fade-up" data-aos-duration="2000">
+            <div id="contact" class="container flex">
+                <section class="contact" data-aos="fade-up" data-aos-duration="1000">
                     <h2>say hello!</h2>
                     <form action="" class="contact-form">
                         <div class="float">
-                            <input type="text" name="name" placeholder="name" required>
+                            <input type="text" name="name" placeholder="Name" required>
                             <label for="name">name</label>
                         </div>
                         <div class="float">
-                            <input type="text" name="email" placeholder="email" required>
+                            <input type="text" name="email" placeholder="Email" required>
                             <label for="email">email</label>
                         </div>
                         <div class="area">
-                            <textarea name="message" id="" cols="30" rows="20" required style="resize:none" placeholder="message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="20" required style="resize:none" placeholder="Message"></textarea>
                             <label for="message" class="area-float">message</label>
                         </div>
-                        <button type="submit">submit</button>
+                        <button class="submit" type="submit">submit</button>
+                        <div class="mobile">
+                            <h3><strong>email:</strong> oba.dennis@gmail.com</h3>
+                            <!-- <h3><strong>mobile:</strong> 647-504-9303</h3> -->
+                        </div>
                     </form>
+                    <div class="media">
+                        <a href="https://github.com/covox01" aria-label="This goes to my github page" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dennisoba/" aria-label="This goes to my linked in page" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/dennisoba" aria-label="This goes to my linked in page" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </section>
             </div>
 
@@ -381,7 +391,7 @@
             <a href="#about" class="nav-item">about</a>
             <div class="nav-item nav-port">
                 <div class="port-title">portfolio</div>
-                <a href="#" class="port-nav">
+                <a href="#port-1" class="port-nav">
                     <a href="#port-1" class="port-nav-item one">1</a>
                     <a href="#port-2" class="port-nav-item">2</a>
                     <a href="#port-3" class="port-nav-item three">3</a>
@@ -393,18 +403,11 @@
         <a href="https://twitter.com/dennisoba" target="_blank" class="icon nav-icon" aria-label="This goes to Dennis Oba twitter"><i
                 class="fab fa-twitter"></i></a>
     </nav>
-
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
         crossorigin='anonymous'></script>
-   
-    <script src="main.js"> </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            // once: true;
-        });
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

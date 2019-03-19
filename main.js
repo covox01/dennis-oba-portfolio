@@ -1,10 +1,4 @@
-
-// const handleClick = () => {
-//     $('.about').on('click', function(){
-        
-//     })
-// }
-
+const $root = $('html, body'); 
 
 const navHover = () => {
     $('.nav-port').hover(function() {
@@ -42,6 +36,20 @@ const goToPortfolio = () => {
 const init = () => {
     navHover();
     goToPortfolio();
+    AOS.init({
+
+    });
+}
+
+const smooth = () => {
+    $('a').smoothScroll({
+        easing: 'swing',
+        speed: 1500
+    })
+    $('.port-title').smoorthScroll({
+        easing: 'swing',
+        speed: 1500
+    })
 }
 // AOS.init();
 // AOS.init({
@@ -53,4 +61,6 @@ const init = () => {
 
 $(function(){
     init();
+    smooth();
+    
 }); 

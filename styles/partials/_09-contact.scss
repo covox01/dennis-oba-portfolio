@@ -8,17 +8,25 @@ textarea:invalid {
     box-shadow: none;
 }
 
+input:focus {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+textarea:focus {
+    border: 1px solid rgb(182, 182, 182);
+}
+
 .contact {
     width: 70%;
     max-width: 500px;
     margin: 0 auto;
-    height: 500px;
+    height: 80%;
     display: flex;
     flex-flow: column;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     h2 {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         letter-spacing: 1px;
         word-spacing: 5px;
     }
@@ -28,7 +36,7 @@ textarea:invalid {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    border: 1px solid $mid-tone;
+    border: 1px solid rgb(189, 189, 189);
     padding: 3%;
     height: 100%;
 }
@@ -38,7 +46,7 @@ textarea:invalid {
     display: flex;
     flex-flow: column;
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
     height: 60px;
 }
 input {
@@ -60,8 +68,7 @@ input::placeholder {
     font-weight: 300;
     font-size: .8rem;
     letter-spacing: 2px;
-    text-transform: none;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 label {
     position: absolute;
@@ -71,10 +78,12 @@ label {
     letter-spacing: 2px;
     bottom: 0;
     bottom: 50%;
-    left: 7px;
+    left: 4px;
     right: 0;
-    text-transform: none;
+    text-transform: capitalize;
     transition: all .5s ease;
+    opacity: 0;
+    // text-align: center;
 }
 label::placeholder {
         transition: opacity 1s ease;
@@ -85,9 +94,11 @@ label::placeholder {
 input:focus + label,
 input:valid + label {
     font-size: 80%;
-    transform: translateY(-160%);
+    transform: translateY(-140%);
     opacity: 1;
+    color: $darkest;
 }
+
 
 input:focus::placeholder {
     opacity: 0;
@@ -99,12 +110,14 @@ input::placeholder {
     font-size: .8rem;
 }
 
-textarea:focus + label,
-textarea:valid + label {
+textarea:focus + .area-float,
+textarea:valid + .area-float {
     font-size: 80%; 
-    transform: translateY(-260%);
+    transform: translateY(-460%);
     opacity: 1;
+    color: $darker;
 }
+
 
 textarea:focus::placeholder {
     opacity: 0;
@@ -120,13 +133,14 @@ textarea {
     height: 150px;
     width: 100%;
     border: 1px solid rgb(209, 209, 209);
-    // margin-bottom: 5%;
+    margin-top: 2%;
     padding-top: 5%;
     padding-left: 5px;
     font-weight: 300;
     color: $darker;
     font-size: .9rem;
     letter-spacing: 2px;
+    z-index: 10;
 }
 
 textarea::placeholder {
@@ -137,23 +151,11 @@ textarea::placeholder {
     opacity: 1;
 }
 
-// area {
-//     position: relative;
-//     display: flex;
-//     flex-flow: column;
-//     width: 100%;
-//     border: 1px solid red;
-//     margin-bottom: 5%;
-//     height: 200px;
-//     // padding-bottom: 00px;
-// }
-
 .area {
     position: relative;
     display: flex;
     flex-flow: column;
     width: 100%;
-
     margin-bottom: 5%;
     // height: 200px;
 }
@@ -166,6 +168,39 @@ button {
     font-size: .8rem;
     background: $darker;
     color: white;
+    transition: background .5s ease;
+}
+
+button.submit:hover {
+    background: rgb(36, 36, 36);
+}
+
+.mobile {
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    // width: 65%;
+}
+
+.contact h3 {
+    font-size: .8rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.media {
+    margin : 10px auto 0;
+    a {
+        padding: 0 7px;
+        transition: color .5s ease;
+    }
+}
+
+.media a:hover {
+    color: black;
 }
 
 @media (max-width: 450px) {
@@ -174,5 +209,12 @@ button {
         margin-bottom: 20%;
     }
 
+}
+
+@media (max-width: 400px) {
+    .contact {
+        width: 90%;
+        margin-bottom: 25%;
+    }
 
 }
