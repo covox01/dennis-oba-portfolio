@@ -139,6 +139,9 @@
     display: none;
 
 }
+// .fa-angle-up {
+//     color: $darker;
+// }
 
 @media (max-width: 775px) {
     .nav-container .nav-wrap {
@@ -161,6 +164,14 @@
     }
     .nav-wrap .super-nav {
         display: flex;
+        cursor: pointer;
+        transition: all .5s ease;
+        color: $darker;
+        background: white;
+    }
+    .nav-wrap .super-nav:hover {
+        background: $darker;
+        color: white;
     }
     .super-nav .nav-more {
         display: none;
@@ -180,11 +191,11 @@
         color: white;
     }
     .more-items {
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 533px) {
     .port-nav {
         padding: 0;
         display: flex;
@@ -214,34 +225,31 @@
         transform: translateY(-249%);
     }
     .super-nav {
-        // display: block;
         width: 100%;
-        border: 1px solid red;
-        background: white;
-        // z-index: 1000;
     }
-    .nav-wrap .more {
+    .super-nav .more {
         width: 100%;
         position: relative;
         background: white;
+        z-index: -10;
     }
-    .nav-more {
+    .super-nav .nav-more {
         border-top: 1px solid $mid-tone;
         display: flex;
         flex-flow: column;
         background: white;
         position: absolute;
-        top: 200px;
+        top: 210%;
         right: 0;
         left: 0;
         bottom: 0;
         transition: all .5s ease;
         flex-basis: 1;
+        z-index: -10;
         a {
-            // z-index: -1;
             font-size: .7rem;
             letter-spacing: 1px;
-            padding: 5% 0;
+            padding: 24px 0;
             background: white;
             width: 100%;
             text-align: center;
@@ -256,6 +264,7 @@
 }
 
 .nav-more-up {
-    transform: translateY(-500%);
+    transform: translateY(-310px);
 }
+
 

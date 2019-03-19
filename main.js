@@ -3,13 +3,16 @@ const $root = $('html, body');
 
 // Bottom navigation that reveals the nav on hover 
     const bottomNav = () => {
-        $('.more').mouseover(function(){
+        $('#super').hover(function(){
             console.log('nav hovered')
             $('.nav-more').addClass('nav-more-up');
+        },
+            function (){
+            $('.nav-more').removeClass('nav-more-up')
         })
-        // $('.more').mouseleave(function(){
-        //     $('.nav-more').removeClass('nav-more-up');
-        // })
+        $('#super-item a').on('click', function(){
+            $('.nav-more').removeClass('nav-more-up');
+        })
 
     }
 // Hover state for portfolio pieces
