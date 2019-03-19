@@ -165,8 +165,9 @@ button {
     box-shadow: 0;
     border: none;
     height: 40px;
-    letter-spacing: 2px;
-    font-size: .8rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: .7rem;
     background: $darker;
     color: white;
     transition: background .5s ease;
@@ -183,7 +184,10 @@ button.submit:hover {
     justify-content: space-between;
     // width: 65%;
     a {
-        font-family: 'Lato', sans-serif; 
+        font-size: .8rem;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
     }
 }
 
@@ -203,8 +207,15 @@ button.submit:hover {
     }
 }
 
-.media a:hover {
+.conicon {
+    transition: color .5s ease;
+}
+
+
+
+.conicon:hover {
     color: black;
+
 }
 
 @media (max-width: 450px) {

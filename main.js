@@ -1,41 +1,54 @@
 const $root = $('html, body'); 
 
-const navHover = () => {
-    $('.nav-port').hover(function() {
-        console.log('yes');
-        $('.port-title').addClass('hover')
-        $('.port-nav').addClass('port-nav-up');
-        $('.port-nav-item').addClass('port-nav-item-up');
-    }, function () {
-        $('.port-title').removeClass('hover');
-        $('.port-nav').removeClass('port-nav-up');
-        $('.port-nav-item').removeClass('port-nav-item-up');
-    })
-}
+
+// Bottom navigation that reveals the nav on hover 
+    const bottomNav = () => {
+        $('.more').mouseover(function(){
+            console.log('nav hovered')
+            $('.nav-more').addClass('nav-more-up');
+        })
+        // $('.more').mouseleave(function(){
+        //     $('.nav-more').removeClass('nav-more-up');
+        // })
+
+    }
+// Hover state for portfolio pieces
+    const navHover = () => {
+        $('.nav-port').hover(function() {
+            $('.port-title').addClass('hover')
+            $('.port-nav').addClass('port-nav-up');
+            $('.port-nav-item').addClass('port-nav-item-up');
+        }, function () {
+            $('.port-title').removeClass('hover');
+            $('.port-nav').removeClass('port-nav-up');
+            $('.port-nav-item').removeClass('port-nav-item-up');
+        })
+    }
 // This opens a new tab using jquery
-const radio = () => {
-    window.open('https://covox01.github.io/broken-radio-puzzle/');
-}
+    const radio = () => {
+        window.open('https://covox01.github.io/broken-radio-puzzle/');
+    }
 
-const weather = () => {
-    window.open('https://alexandershindennisoba.github.io/weather-gallery/');
-}
+    const weather = () => {
+        window.open('https://alexandershindennisoba.github.io/weather-gallery/');
+    }
 
-const boffo = () => {
-    window.open('https://auth-test-d2fa2.firebaseapp.com/');
-}
+    const boffo = () => {
+        window.open('https://auth-test-d2fa2.firebaseapp.com/');
+    }
 
 
-const goToPortfolio = () => {
-    $('.nav-port').on('click', function(){
-        console.log('yo')
-        window.location.hash = $(this).attr("#port-1");
-    })
-}
+    const goToPortfolio = () => {
+        $('.nav-port').on('click', function(){
+            console.log('yo')
+            window.location.hash = $(this).attr("#port-1");
+        })
+    }
 
 const init = () => {
     navHover();
     goToPortfolio();
+    bottomNav();
     AOS.init({
 
     });

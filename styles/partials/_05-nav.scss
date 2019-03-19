@@ -120,6 +120,7 @@
 
 .port-nav-up {
     transform: translateY(-100%);
+
 }
 
 .port-nav-item-up {
@@ -134,11 +135,13 @@
 .nav-wrap .more {
     display: none;
 }
+.nav-wrap .super-nav {
+    display: none;
+
+}
 
 @media (max-width: 775px) {
     .nav-container .nav-wrap {
-        // justify-content: space-between;
-        // border: 1px solid red;
         width: 100%;
     }
     .nav-item {
@@ -156,18 +159,22 @@
     .nav-skills, .nav-contact {
         display: none;
     }
-    .nav-wrap .more {
+    .nav-wrap .super-nav {
+        display: flex;
+    }
+    .super-nav .nav-more {
+        display: none;
+    }
+    .super-nav .more {
         display: block;
         color: $darker;
-        width: 50%;
+        width: 60px;
         cursor: pointer;
-        // border: 1px solid red;
         justify-self: center;
         align-self: center;
         display: flex;
         transition: all .5s ease;
     }
-
     .nav-wrap .more:hover {
         background: $darker;
         color: white;
@@ -206,7 +213,49 @@
     .port-nav-item-up {
         transform: translateY(-249%);
     }
+    .super-nav {
+        // display: block;
+        width: 100%;
+        border: 1px solid red;
+        background: white;
+        // z-index: 1000;
+    }
     .nav-wrap .more {
         width: 100%;
+        position: relative;
+        background: white;
+    }
+    .nav-more {
+        border-top: 1px solid $mid-tone;
+        display: flex;
+        flex-flow: column;
+        background: white;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transition: all .5s ease;
+        flex-basis: 1;
+        a {
+            // z-index: -1;
+            font-size: .7rem;
+            letter-spacing: 1px;
+            padding: 5% 0;
+            background: white;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all .3s ease;
+        }
+        a:hover {
+            background: $darker;
+            color: white;
+        }
     }
 }
+
+.nav-more-up {
+    transform: translateY(-500%);
+}
+
