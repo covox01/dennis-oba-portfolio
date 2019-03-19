@@ -461,6 +461,76 @@ h1 {
   color: white;
   background: #5d626b; }
 
+.nav-wrap .more {
+  display: none; }
+
+@media (max-width: 775px) {
+  .nav-container .nav-wrap {
+    width: 100%; }
+  .nav-item {
+    padding: 23px 0;
+    width: 100%;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1; }
+  .nav-icon {
+    display: none; } }
+
+@media (max-width: 533px) {
+  .nav-skills, .nav-contact {
+    display: none; }
+  .nav-wrap .more {
+    display: block;
+    color: #5d626b;
+    width: 50%;
+    cursor: pointer;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .nav-wrap .more:hover {
+    background: #5d626b;
+    color: white; }
+  .more-items {
+    border: 1px solid red; } }
+
+@media (max-width: 435px) {
+  .port-nav {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: none; }
+  .port-nav-item {
+    padding: 0;
+    display: none; }
+  .nav-item, .nav-wrap .port-title {
+    display: none; }
+  .nav-item.nav-port {
+    display: none; }
+  .port-nav-up {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    bottom: 76%; }
+  .port-nav-item-up {
+    display: none; }
+  .port-nav-item-up {
+    -webkit-transform: translateY(-249%);
+    -ms-transform: translateY(-249%);
+    transform: translateY(-249%); }
+  .nav-wrap .more {
+    width: 100%; } }
+
 .about {
   display: -ms-grid;
   display: grid;
@@ -1008,6 +1078,7 @@ textarea:focus {
   max-width: 500px;
   margin: 0 auto;
   height: 80%;
+  max-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1312,6 +1383,8 @@ button.submit:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .mobile a {
+    font-family: 'Lato', sans-serif; }
 
 .contact h3 {
   font-size: .8rem;
