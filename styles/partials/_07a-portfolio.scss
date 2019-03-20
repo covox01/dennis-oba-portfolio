@@ -28,6 +28,7 @@
     margin: 0 auto;
     border-radius: 20px;
     margin-bottom: 5%;
+    cursor: pointer;
 }
 
 .demo-b {
@@ -96,7 +97,7 @@
     line-height: 2;
     letter-spacing: .5px;
     text-align: justify;
-    margin-bottom: 6%;
+    margin-bottom: 23px;
 }
 
 .tech, .desc span {
@@ -122,7 +123,7 @@
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
-    margin-bottom: 8%;
+    margin-bottom: 20px;
 }
 
 .decor {
@@ -158,8 +159,11 @@
     transition: fill .5s ease;
 }
 
-#github path{
+
+
+#github path,  {
     fill: rgb(119, 118, 118);
+    transition: all .5s ease
 }
 
 @media (max-width: 1110px) {
@@ -219,13 +223,13 @@
         }
         ul {
             width: 70%;
-            max-width: 400px;
+            // max-width: 400px;
         }
         span {
-            margin-bottom: 5%;
+            margin-bottom: 22px;
         }
         p {
-            margin-bottom: 5%;
+            margin-bottom: 15px;
         }
     }
 }
@@ -302,7 +306,7 @@
     .desc {
         height: auto;
         p {
-            margin-bottom: 7%;
+            margin-bottom: 15px;
             width: 80%;
         }
         ul {
