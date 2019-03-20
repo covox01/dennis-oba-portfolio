@@ -101,14 +101,6 @@ let vid3 = false;
         window.open('https://github.com/demonagency/BoxOfficeBoffo');
     }
 
-
-    const goToPortfolio = () => {
-        $('.nav-port').on('click', function(){
-            console.log('yo')
-            window.location.hash = $(this).attr("#port-1");
-        })
-    }
-
 const smooth = () => {
     $('a').smoothScroll({
         easing: 'swing',
@@ -122,14 +114,13 @@ const smooth = () => {
 
 const init = () => {
     navHover();
-    goToPortfolio();
     bottomNav();
     playVideo();
-    AOS.init({});
+    AOS.init({
+        once: false
+    });
     smooth();
 }
-
-
 
 $(function(){
     init();
