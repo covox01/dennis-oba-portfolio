@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="jquery-ui.min.css"> -->
+    <!-- <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"> -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -83,7 +83,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div id="radio-github"class="github">
+                                <div id="radio-github"class="github" onClick="radioGithub();">
                                     <svg class="github-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         viewBox="0 0 778.1 234.4" enable-background="new 0 0 778.1 234.4" xml:space="preserve">
                                         <g id="border_1_">
@@ -148,7 +148,7 @@
                             </ul>
                             <span>javascript</span>
                             <div class="port-btn">
-                                <div id="radio-live" class="live" onClick="weather();" target="_blank">
+                                <div id="weather-live" class="live" onClick="weather();" target="_blank">
                                     <svg class="live-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         x="0px" y="0px" viewBox="0 0 778.1 234.4" enable-background="new 0 0 778.1 234.4" xml:space="preserve">
                                         <g>
@@ -169,7 +169,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div id="radio-github" class="github">
+                                <div id="weather-github" class="github" onClick="weatherGithub()">
                                     <svg class="github-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 778.1 234.4"
                                         enable-background="new 0 0 778.1 234.4" xml:space="preserve">
@@ -258,7 +258,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div id="boffo-github" class="github">
+                                <div id="boffo-github" class="github" onClick="boffoGithub()">
                                     <svg class="github-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 778.1 234.4"
                                         enable-background="new 0 0 778.1 234.4" xml:space="preserve">
@@ -302,7 +302,8 @@
                     </article>
                 </section>
             </div>
-            <div class="container flex" id="skills" data-aos="fade-up" data-aos-duration="2000">
+            <div></div>
+            <div class="container flex" id="skills" data-aos="fade-up" data-aos-duration="1000">
                 <section class="skills">
                     <div class="skills-row">
                         <div class="skills-item">
@@ -354,7 +355,7 @@
             <div id="contact" class="container flex">
                 <section class="contact" data-aos="fade-up" data-aos-duration="1000">
                     <h2>say hello!</h2>
-                    <form action="" class="contact-form">
+                    <form action="https://formspree.io/oba.dennis@gmail.com" method="POST" class="contact-form">
                         <div class="float">
                             <input type="text" name="name" placeholder="Name" required>
                             <label for="name">name</label>

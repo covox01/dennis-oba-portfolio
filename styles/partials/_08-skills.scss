@@ -1,6 +1,6 @@
 .skills {
     width: 80%;
-    height: 50%;
+    height: 50vh;
     margin: 0 auto 5%;
     display: flex;
     flex-flow: column;
@@ -10,6 +10,7 @@
 .skills-row {
     display: flex;
     width: 100%;
+    // height: 50vh;
     justify-content: space-evenly;
 }
 
@@ -41,7 +42,7 @@
     .skills {
         margin: 20% auto;
         flex-direction: row;
-        height: 100%;
+        height: 100vh;
     }
     .skills-row {
         flex-flow: column;
