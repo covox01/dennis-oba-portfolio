@@ -277,40 +277,47 @@ header {
   height: 100vh;
   position: relative; }
 
-h1 {
-  font-weight: 800;
-  font-size: 2rem;
-  letter-spacing: 7px;
-  word-spacing: 5px;
-  text-transform: uppercase;
-  color: #454551;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  margin-bottom: 10%;
+.header-title {
   margin-left: 6%;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
+  width: 100%;
+  margin-bottom: 12%; }
+  .header-title h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    color: #454551;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .header-title h2 {
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    word-spacing: 3px; }
 
 @media (max-width: 1000px) {
-  h1 {
+  .header-title {
     -webkit-transform: translateY(-200%);
     -ms-transform: translateY(-200%);
     transform: translateY(-200%); } }
 
 @media (max-width: 920px) {
-  h1 {
+  .header-title {
     -webkit-transform: translateY(-300%);
     -ms-transform: translateY(-300%);
     transform: translateY(-300%);
     margin-left: 10%; } }
 
 @media (max-width: 500px) {
-  h1 {
-    -webkit-transform: translateY(-390%);
-    -ms-transform: translateY(-390%);
-    transform: translateY(-390%);
+  .header-title {
+    -webkit-transform: translateY(-350%);
+    -ms-transform: translateY(-350%);
+    transform: translateY(-350%);
     font-size: 1.7rem;
     letter-spacing: 3.5px; } }
 
@@ -854,7 +861,7 @@ h1 {
   line-height: 2;
   letter-spacing: .5px;
   text-align: justify;
-  margin-bottom: 23px; }
+  margin-bottom: 21px; }
 
 .tech, .desc span {
   display: -webkit-box;
@@ -886,7 +893,7 @@ h1 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 20px; }
+  margin-bottom: 23px; }
 
 .decor {
   height: 13px;
@@ -902,7 +909,7 @@ h1 {
   justify-content: center; }
 
 .live-btn, .github-btn {
-  width: 75px;
+  width: 68px;
   cursor: pointer;
   margin: 0 5px; }
 
@@ -972,7 +979,7 @@ h1 {
     .desc span {
       margin-bottom: 22px; }
     .desc p {
-      margin-bottom: 15px; } }
+      margin-bottom: 20px; } }
 
 @media (max-width: 667px) and (max-height: 375px) {
   .port-a {
@@ -1035,7 +1042,7 @@ h1 {
   .desc {
     height: auto; }
     .desc p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       width: 80%; }
     .desc ul {
       width: 80%; } }

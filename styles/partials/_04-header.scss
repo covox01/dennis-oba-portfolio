@@ -8,37 +8,47 @@ header {
     position: relative;
 }
 
-h1 {
-    font-weight: 800;
-    font-size: 2rem;
-    letter-spacing: 7px;
-    word-spacing: 5px;
-    text-transform: uppercase;
-    color: $darkest;
-    align-self: center;
-    margin-bottom: 10%;
+.header-title {
     margin-left: 6%;
-    transition: all .5s ease;
-
+    width: 100%;
+    margin-bottom: 12%;
+    h1 {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 7px;
+        word-spacing: 5px;
+        text-transform: uppercase;
+        color: $darkest;
+        align-self: center;
+        // margin-bottom: 10%;
+        // margin-left: 6%;
+        transition: all .5s ease;
+    }
+    h2 {
+        font-weight: 300;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+    }
 }
 
 @media (max-width: 1000px){
-    h1 {
+    .header-title {
         transform: translateY(-200%);
         // margin-left: 8%;
     }
 }
 
 @media (max-width: 920px){
-    h1 {
+    .header-title {
         transform: translateY(-300%);
         margin-left: 10%;
     }
 }
 
 @media (max-width: 500px){
-    h1 {
-        transform: translateY(-390%);
+    .header-title {
+        transform: translateY(-350%);
         font-size: 1.7rem;
         letter-spacing: 3.5px;
     }
